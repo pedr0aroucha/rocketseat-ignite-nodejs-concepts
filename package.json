@@ -4,8 +4,8 @@
 	"main": "src/server.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon",
-		"test": "jest"
+		"dev": "echo \"[]\" > src/database/users.json &&nodemon --ignore src/database/users.json",
+		"test": "echo \"[]\" > src/database/users.json && jest --detectOpenHandles"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
